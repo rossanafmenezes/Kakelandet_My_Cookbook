@@ -5,4 +5,6 @@
     <string name="home">Home</string>
     <string name="recipes">Recipes</string>
     <string name="ingredients">Ingredients</string>
+    <string name="ingredients_list">Ingredients List</string>
+    <string name="recipes_list">Recipes List</string>
 </resources>
