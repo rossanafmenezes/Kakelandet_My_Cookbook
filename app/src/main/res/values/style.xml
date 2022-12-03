@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    // Buttons
+    <style name="OutlinedButton" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/kakelandet_pink</item>
+        <item name="android:textStyle">bold</item>
+        <item name="backgroundTint">@color/kakelandet_yellow</item>
+        <item name="strokeColor">@color/kakelandet_pink</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="cornerRadius">40dp</item>
+    </style>
+
+    <style name="RegularButton" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/kakelandet_yellow</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">40dp</item>
+    </style>
+</resources>
