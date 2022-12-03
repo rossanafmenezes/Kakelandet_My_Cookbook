@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.kakelandet_mycookbook.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment2_to_recipesListFragment2"
             app:destination="@id/recipesListFragment" />
@@ -20,8 +20,8 @@
     <fragment
         android:id="@+id/recipesListFragment"
         android:name="com.example.kakelandet_mycookbook.RecipesListFragment"
-        android:label="fragment_recipes_list"
-        tools:layout="@layout/fragment_recipes_list" >
+        android:label="Recipes List"
+        tools:layout="@layout/fragment_recipes_list">
         <action
             android:id="@+id/action_recipesListFragment2_to_recipeDetailsFragment2"
             app:destination="@id/recipeDetailsFragment" />
@@ -29,13 +29,13 @@
     <fragment
         android:id="@+id/recipeDetailsFragment"
         android:name="com.example.kakelandet_mycookbook.RecipeDetailsFragment"
-        android:label="fragment_recipe_details"
+        android:label="Recipe"
         tools:layout="@layout/fragment_recipe_details" />
     <fragment
         android:id="@+id/ingredientsListFragment"
         android:name="com.example.kakelandet_mycookbook.IngredientsListFragment"
-        android:label="fragment_ingredients_list"
-        tools:layout="@layout/fragment_ingredients_list" >
+        android:label="Ingredients List"
+        tools:layout="@layout/fragment_ingredients_list">
         <action
             android:id="@+id/action_ingredientsListFragment2_to_ingredientDetailsFragment2"
             app:destination="@id/ingredientDetailsFragment" />
@@ -43,6 +43,6 @@
     <fragment
         android:id="@+id/ingredientDetailsFragment"
         android:name="com.example.kakelandet_mycookbook.IngredientDetailsFragment"
-        android:label="fragment_ingredient_details"
+        android:label="Ingredient"
         tools:layout="@layout/fragment_ingredient_details" />
 </navigation>
