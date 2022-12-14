@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id("androidx.navigation.safeargs.kotlin")
+    id('kotlin-kapt')
 }
 
 android {
@@ -31,6 +32,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures {
+        dataBinding true
+    }
 }
 
 dependencies {
@@ -58,8 +63,9 @@ dependencies {
     // Testing Navigation
     androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
 
-    // Jetpack Compose Integration
-    implementation "androidx.navigation:navigation-compose:$nav_version"
+    // Data binding
+    kapt "androidx.databinding:databinding-common:7.3.1"
 
-    implementation 'com.google.android.material:material:1.8.0-alpha03'
+    // Recyclerview
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
 }
