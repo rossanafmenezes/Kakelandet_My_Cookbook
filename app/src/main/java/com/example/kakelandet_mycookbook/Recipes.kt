@@ -1,7 +1,5 @@
 package com.example.kakelandet_mycookbook
 
-import android.content.res.Resources
-
 // Dummy data to inflate the recipe list while the database is not set
 
 fun recipeList(): List<Recipe> {
