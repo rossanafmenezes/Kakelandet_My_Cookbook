@@ -24,7 +24,7 @@
     <style name="CardTitle" parent="TextAppearance.AppCompat">
         <item name="android:textSize">@dimen/cardTitle</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/kakelandet_brown_dark</item>
+        <item name="android:textColor">@color/kakelandet_brown</item>
     </style>
 
     <style name="CardDescription" parent="TextAppearance.AppCompat">
