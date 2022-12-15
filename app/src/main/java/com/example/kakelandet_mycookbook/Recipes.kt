@@ -4,7 +4,7 @@ import android.content.res.Resources
 
 // Dummy data to inflate the recipe list while the database is not set
 
-fun recipeList(resources: Resources): List<Recipe> {
+fun recipeList(): List<Recipe> {
     return listOf(
         Recipe(
             id = 1,
