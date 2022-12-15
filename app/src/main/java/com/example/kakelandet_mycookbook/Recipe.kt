@@ -2,7 +2,7 @@ package com.example.kakelandet_mycookbook
 
 import androidx.annotation.DrawableRes
 
-data class RecipeListItem(
+data class Recipe(
     @DrawableRes val image: Int?,
     @DrawableRes val timeIcon: Int,
     @DrawableRes val servingIcon: Int,
