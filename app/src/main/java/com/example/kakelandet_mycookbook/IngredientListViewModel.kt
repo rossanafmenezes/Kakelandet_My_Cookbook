@@ -1,4 +1,11 @@
 package com.example.kakelandet_mycookbook
 
-class IngredientListViewModel {
+import androidx.lifecycle.ViewModel
+
+class IngredientListViewModel: ViewModel() {
+    private val initiateIngredientList = ingredientList()
+
+    fun getIngredientList(): List<Ingredient> {
+        return initiateIngredientList
+    }
 }
