@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    // Buttons
+    <!--
+        Buttons Styles
+    -->
     <style name="OutlinedButton" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/kakelandet_pink</item>
         <item name="android:textStyle">bold</item>
@@ -16,4 +17,20 @@
         <item name="android:textStyle">bold</item>
         <item name="cornerRadius">40dp</item>
     </style>
+
+    <!--
+        Text Styles
+    -->
+    <style name="CardTitle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/cardTitle</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/kakelandet_brown</item>
+    </style>
+
+    <style name="CardDescription" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/cardTitle</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/kakelandet_brown</item>
+    </style>
+
 </resources>
