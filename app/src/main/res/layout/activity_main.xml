@@ -10,10 +10,6 @@
     tools:context=".MainActivity"
     tools:ignore="HardcodedText">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
     <!-- NavHost container -->
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/navHostFragment"
@@ -26,7 +22,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:navGraph="@navigation/main_nav" />
-    </LinearLayout>
 
     <!-- Container for contents of drawer menu -->
     <com.google.android.material.navigation.NavigationView
