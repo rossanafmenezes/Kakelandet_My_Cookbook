@@ -29,7 +29,6 @@ class RecipesListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentRecipesListBinding.inflate(inflater, container, false)
-        binding.lifecycleOwner = this
 
         binding.recipesListRv.adapter = RecipeListAdapter(recipeList)
         binding.recipesListRv.layoutManager = LinearLayoutManager(requireContext())
