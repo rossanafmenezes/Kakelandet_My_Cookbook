@@ -15,14 +15,6 @@ class RecipesListFragment : Fragment() {
     private var _binding: FragmentRecipesListBinding? = null
     private val binding get() = _binding!!
 
-    private lateinit var recipeList: List<Recipe>
-
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        recipeList = viewModel.getRecipesList()
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -30,7 +22,7 @@ class RecipesListFragment : Fragment() {
     ): View? {
         _binding = FragmentRecipesListBinding.inflate(inflater, container, false)
 
-        binding.recipesListRv.adapter = RecipeListAdapter(recipeList)
+        binding.recipesListRv.adapter = RecipeListAdapter(viewModel.getRecipesList())
         binding.recipesListRv.layoutManager = LinearLayoutManager(requireContext())
 
         return binding.root
