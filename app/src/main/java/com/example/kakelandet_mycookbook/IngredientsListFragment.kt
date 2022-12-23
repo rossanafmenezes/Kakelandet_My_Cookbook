@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.kakelandet_mycookbook.databinding.FragmentIngredientsListBinding
 
@@ -25,6 +26,11 @@ class IngredientsListFragment : Fragment() {
 
         binding.ingredientsRv.adapter = IngredientListAdapter(viewModel.getIngredientList())
         binding.ingredientsRv.layoutManager = LinearLayoutManager(requireContext())
+        binding.addIngredientFab.setOnClickListener{
+            findNavController().navigate(
+                R.id.action_ingredientsListFragment_to_addIngredientFragment
+            )
+        }
 
         return binding.root
     }

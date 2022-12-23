@@ -11,4 +11,7 @@
     <string name="nav_close">Close</string>
     <string name="recipe_imageView_description">A picture of the recipe</string>
     <string name="add_ingredient_button_description">Add Ingredient Button</string>
+    <string name="ingredient_name_label">Ingredient Name</string>
+    <string name="new_ingredient_edit_text_hint">New Ingredient </string>
+    <string name="add_button_text">Add</string>
 </resources>
