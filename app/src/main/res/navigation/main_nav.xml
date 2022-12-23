@@ -39,10 +39,18 @@
         <action
             android:id="@+id/action_ingredientsListFragment2_to_ingredientDetailsFragment2"
             app:destination="@id/ingredientDetailsFragment" />
+        <action
+            android:id="@+id/action_ingredientsListFragment_to_addIngredientFragment"
+            app:destination="@id/addIngredientFragment" />
     </fragment>
     <fragment
         android:id="@+id/ingredientDetailsFragment"
         android:name="com.example.kakelandet_mycookbook.IngredientDetailsFragment"
         android:label="Ingredient"
         tools:layout="@layout/fragment_ingredient_details" />
+    <fragment
+        android:id="@+id/addIngredientFragment"
+        android:name="com.example.kakelandet_mycookbook.AddIngredientFragment"
+        android:label="Add New Ingredient"
+        tools:layout="@layout/fragment_add_ingredient" />
 </navigation>
